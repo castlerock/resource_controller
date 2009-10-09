@@ -16,7 +16,7 @@ begin
     end
     s.files = file_list
   end
-  Jaweler::GemcutterTasks.new
+  Jeweler::GemcutterTasks.new
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
 end
