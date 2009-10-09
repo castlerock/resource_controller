@@ -21,7 +21,6 @@ module ResourceController
   #   end
   module Helpers
     include ResourceController::Helpers::Urls
-    include ResourceController::Helpers::Internal
     include ResourceController::Helpers::Nested
     include ResourceController::Helpers::CurrentObjects
   end
