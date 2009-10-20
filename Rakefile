@@ -9,7 +9,7 @@ begin
     s.summary = "Rails RESTful controller abstraction plugin."
     s.email = "matid@matid.net"
     s.homepage = "http://github.com/matid/resource_controller"
-    s.authors = ["Mateusz Drożdżyński", "James Golick"]
+    s.authors = ["Mateusz Drozdzynski", "James Golick"]
     file_list = FileList.new("[A-Z]*.*", "{bin,generators,lib,test,spec,rails}/**/*") do |f|
       f.exclude(/\.sqlite3/)
       f.exclude(/\.log/)
