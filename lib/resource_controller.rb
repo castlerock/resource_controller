@@ -1,9 +1,3 @@
-begin
-  require_dependency 'application_controller'
-rescue LoadError => e
-  require_dependency 'application'
-end
-
 module ResourceController
   NAME_ACCESSORS    = [:model_name, :route_name, :object_name]  
   
