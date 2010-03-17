@@ -5,15 +5,16 @@
 
 Gem::Specification.new do |s|
   s.name = %q{matid-resource_controller}
-  s.version = "0.6.6"
+  s.version = "0.6.7"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mateusz Drozdzynski", "James Golick"]
-  s.date = %q{2009-10-20}
+  s.date = %q{2010-03-17}
   s.email = %q{matid@matid.net}
   s.extra_rdoc_files = [
     "LICENSE",
-     "README.rdoc"
+     "README.rdoc",
+     "TODO"
   ]
   s.files = [
     "README.rdoc",
@@ -245,7 +246,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/matid/resource_controller}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.5}
+  s.rubygems_version = %q{1.3.6}
   s.summary = %q{Rails RESTful controller abstraction plugin.}
   s.test_files = [
     "test/app/controllers/accounts_controller.rb",
