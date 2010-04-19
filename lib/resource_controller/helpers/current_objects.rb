@@ -29,12 +29,12 @@ module ResourceController
 
         # Returns the model finder method.
         #
-        # Defaults to :find
+        # Defaults to :find_by_permalink if defined, otherwise :find
         #
-        # Override this method if you'd like to use an alternate finder, e.g. find_by_permalink.
+        # Override this method if you'd like to use an alternate finder.
         #
         def finder
-          :find
+          model.respond_to?(:find_by_permalink) ? :find_by_permalink : :permalink
         end
 
         # Used to fetch the current member object in all of the singular methods that operate on an existing member.

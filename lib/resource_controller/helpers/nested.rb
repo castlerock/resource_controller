@@ -53,7 +53,7 @@ module ResourceController
 
         # Like the finder method, but for a parent relationship
         def parent_finder
-          :find
+          parent_model.respond_to?(:find_by_permalink) ? :find_by_permalink : :permalink
         end
 
         # Returns the current parent object if a parent object is present.
